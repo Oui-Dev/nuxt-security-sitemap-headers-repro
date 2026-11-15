@@ -1,0 +1,16 @@
+{
+  "name": "nuxt-security-sitemap-headers",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "build:vercel": "nuxt build --preset vercel",
+    "check": "node check.mjs",
+    "clean": "node -e \"for (const dir of ['.output', '.vercel', '.nuxt', 'node_modules/.cache/nuxt']) require('node:fs').rmSync(dir, { recursive: true, force: true })\""
+  },
+  "dependencies": {
+    "@nuxtjs/sitemap": "9.1.0",
+    "nuxt": "4.6.4",
+    "nuxt-security": "2.7.0"
+  }
+}
